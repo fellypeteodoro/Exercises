@@ -1,0 +1,21 @@
+"""
+Neste exercício, eu irei criar algum problema de notas de alunos e irei desenvolver sozinho a atividade no decorrer da mesma
+"""
+
+print('=======================================')
+print('|        ESCOLA AURORA E AUGUSTO      |')
+print('=======================================')
+qtdalunos = int(input('QUANTOS ALUNOS SÃO NA SUA TURMA? '))
+mnota = 0
+maluno = ''
+ctaluno = 0
+while (ctaluno < qtdalunos):
+    nomedoaluno = str(input('NOME DO ALUNO: '))
+    nota = float(input('NOTA DO ALUNO: '))
+    ctaluno = ctaluno + 1
+    if (nota > mnota):
+        mnota = nota
+        maluno = nomedoaluno
+
+
+print(f'O aluno(a) com a melhor nota foi {maluno} com a nota de {mnota}')
